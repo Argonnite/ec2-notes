@@ -1,0 +1,95 @@
+
+DEBIAN/UBUNTU
+-------------
+
+1.  Log into aws.amazon.com.  Click EC2.
+
+2.  Create key pair.  Save the .pem file for safekeeping--this is your private key.  Keep this secret.
+
+3.  Go to EC2.  Launch Instance.  "Select" the Ubuntu server.
+
+4.  Select "Free tier" option, use defaults and Launch.
+
+5.  Select the key pair from Step 2.  Launch Instances.
+
+6.  Note "Public DNS".  Log in to that DNS using username "ubuntu".
+
+7.  On command line, "sudo apt-get update"
+
+8.  "sudo apt install dselect"
+
+For logging in from Windows:
+
+9.  Install xrdp and lxdm
+
+10. "sudo start lxdm"
+
+11. "sudo passwd ubuntu"
+
+12. Log into public DNS from Windows Remote Desktop Connection.
+
+
+Redmine
+-------
+1.  Install libapache2-mod-passenger
+
+2.  Create softlink in /etc/apache2/conf-enabled to /usr/share/doc/redmine/examples/apache2-passenger-alias.conf, then apache2ctl or service restart
+
+3.  "apache2ctl restart"
+
+4.  http://localhost/redmine
+
+
+
+Plone
+-----
+
+1.  Read http://docs.plone.org/manage/installing/installation.html
+
+2.  sudo apt-get install python-setuptools python-dev build-essential libssl-dev libxml2-dev libxslt1-dev libbz2-dev libjpeg62-dev
+
+3.  sudo apt-get install libreadline-dev wv poppler-utils
+
+4.  sudo apt-get install git
+
+5.  sudo apt-get install libz-dev
+
+6.  ./install.sh standalone
+
+7.  Record username/pw (admin/KXZLOgKmDX4G)
+
+8.  Install developer tools:  "cd ~/Plone/zinstance; bin/buildout -c develop.cfg"
+
+9.  Launch the installation:  "cd ~/Plone/zinstance; bin/plonectl start"
+
+10.  Go to http://localhost:8080
+
+
+
+References
+----------
+
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
+http://www.comtechies.com/2013/02/how-to-set-up-gui-on-amazon-ec2-ubuntu.html
+
+
+Notes
+-----
+
+"sudo service restart /etc/init.d/apache2"
+
+/etc/apache2 directory contains the .conf files used.  apache2.conf contains useful comments.
+
+apache2ctl is a script/program.
+
+/etc/apache2/{conf,mods,sites}-{available,enabled}
+
+
+
+REDHAT
+------
+
+"ec2-user" for RedHat.
+
+"sudo yum update"
