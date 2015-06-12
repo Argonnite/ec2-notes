@@ -85,6 +85,7 @@ apache2ctl is a script/program.
 
 /etc/apache2/{conf,mods,sites}-{available,enabled}
 
+php5-curl (needed by Drupal testing module) requires Apache restart after installation.
 
 
 REDHAT
