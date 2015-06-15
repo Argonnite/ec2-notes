@@ -65,6 +65,7 @@ Plone
 10.  Go to http://localhost:8080
 
 
+
 Drupal7 (Refer to /usr/share/doc/drupal7/README.Debian.gz)
 -------
 
@@ -77,6 +78,19 @@ Drupal7 (Refer to /usr/share/doc/drupal7/README.Debian.gz)
 4.  Click on Standard install.  Save and continue.  Save and continue.
 
 5.  Fill out "Configure site" form for admin account and email information.
+
+
+Drupal7 subtheme import
+-----------------------
+
+1.  "sudo mkdir /usr/share/drupal7/sites/all" 
+
+2.  "sudo mkdir /usr/share/drupal7/sites/all/themes"
+
+3.  "mv subtheme_dir /usr/share/drupal7/sites/all/themes"
+
+4.  Enable subtheme from admin Appearance menu.
+
 
 
 References
