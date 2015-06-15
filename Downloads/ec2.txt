@@ -65,6 +65,19 @@ Plone
 10.  Go to http://localhost:8080
 
 
+Drupal7 (Refer to /usr/share/doc/drupal7/README.Debian.gz)
+-------
+
+1.  drupal7.conf in /etc/apache2/conf-available needs to be moved to /etc/apache2/conf-enabled
+
+2.  "sudo apache2ctl restart"
+
+3.  Open browser to http://localhost/drupal7/install.php
+
+4.  Click on Standard install.  Save and continue.  Save and continue.
+
+5.  Fill out "Configure site" form for admin account and email information.
+
 
 References
 ----------
