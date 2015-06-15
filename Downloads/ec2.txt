@@ -20,7 +20,7 @@ DEBIAN/UBUNTU
 
 For logging in from Windows:
 
-9.  Install xrdp and lxdm
+9.  Install xrdp and lxdm (may require "Update Packages" beforehand)
 
 10. "sudo start lxdm"
 
