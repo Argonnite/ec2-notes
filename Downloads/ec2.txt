@@ -41,30 +41,6 @@ Redmine
 
 
 
-Plone
------
-
-1.  Read http://docs.plone.org/manage/installing/installation.html
-
-2.  sudo apt-get install python-setuptools python-dev build-essential libssl-dev libxml2-dev libxslt1-dev libbz2-dev libjpeg62-dev
-
-3.  sudo apt-get install libreadline-dev wv poppler-utils
-
-4.  sudo apt-get install git
-
-5.  sudo apt-get install libz-dev
-
-6.  ./install.sh standalone
-
-7.  Record username/pw (admin/KXZLOgKmDX4G)
-
-8.  Install developer tools:  "cd ~/Plone/zinstance; bin/buildout -c develop.cfg"
-
-9.  Launch the installation:  "cd ~/Plone/zinstance; bin/plonectl start"
-
-10.  Go to http://localhost:8080
-
-
 
 Drupal7 (Refer to /usr/share/doc/drupal7/README.Debian.gz)
 -------
@@ -115,9 +91,3 @@ apache2ctl is a script/program.
 php5-curl (needed by Drupal testing module) requires Apache restart after installation.
 
 
-REDHAT
-------
-
-"ec2-user" for RedHat.
-
-"sudo yum update"
