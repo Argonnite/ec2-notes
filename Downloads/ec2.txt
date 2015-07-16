@@ -91,3 +91,26 @@ apache2ctl is a script/program.
 php5-curl (needed by Drupal testing module) requires Apache restart after installation.
 
 
+
+DRUPAL FTP ACCESS
+Linux Instructions (UNSECURED):
+
+Step 1: sudo  apt-get  install  vsftpd
+
+Step 2: sudo nano /etc/vsftpd.conf
+Uncomment these settings:
+listen=YES
+local_enable=YES
+write_enable=YES
+local_umask=022
+anon_upload_enable=YES
+anon_mkdir_write_enable=YES
+
+Enter the following:
+local_root=/home
+
+Step 3: sudo service vsftpd restart
+
+Now you should be able to install modules via ftp. For user/pass, anonymous and blank password.
+
+This was written for n00bs who just want to test modules locally. To set this up on a live server, read the documentation thoroughly.
