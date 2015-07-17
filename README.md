@@ -2,8 +2,8 @@
 
 
 
-DEBIAN/UBUNTU
--------------
+DEBIAN/UBUNTU VM CREATION
+-------------------------
 
 1.  Log into aws.amazon.com.  Click EC2.
 
@@ -32,18 +32,6 @@ For logging in from Windows:
 12. Log into public DNS from Windows Remote Desktop Connection.
 
 
-Redmine
--------
-1.  Install libapache2-mod-passenger
-
-2.  Create softlink in /etc/apache2/conf-enabled to /usr/share/doc/redmine/examples/apache2-passenger-alias.conf, then apache2ctl or service restart
-
-3.  "apache2ctl restart"
-
-4.  http://localhost/redmine
-
-
-
 
 Drupal7 (Refer to /usr/share/doc/drupal7/README.Debian.gz)
 -------
@@ -57,6 +45,44 @@ Drupal7 (Refer to /usr/share/doc/drupal7/README.Debian.gz)
 4.  Click on Standard install.  Save and continue.  Save and continue.
 
 5.  Fill out "Configure site" form for admin account and email information.
+
+
+
+DRUPAL FTP ACCESS (For modules installation page)
+-------------------------------------------------
+
+FROM https://www.drupal.org/node/1608658
+Linux Instructions (UNSECURED):
+
+Step 1: sudo  apt-get  install  vsftpd
+
+Step 2: sudo nano /etc/vsftpd.conf
+Uncomment these settings:
+listen=YES
+local_enable=YES
+write_enable=YES
+local_umask=022
+anon_upload_enable=YES
+anon_mkdir_write_enable=YES
+
+Enter the following:
+local_root=/home
+
+Step 3: sudo service vsftpd restart
+
+Now you should be able to install modules via ftp. For user/pass, anonymous and blank password.
+
+This was written for n00bs who just want to test modules locally. To set this up on a live server, read the documentation thoroughly.
+
+ADDITIONALLY:
+cd /usr/share/drupal7
+sudo chown www-data sites
+sudo chown www-data /etc
+sudo chown www-data /etc/drupal
+sudo chown www-data /etc/drupal/7
+sudo chown www-data /etc/drupal/7/sites
+sudo chown www-data /etc/drupal/7/sites/default
+
 
 
 Drupal7 subtheme import
@@ -92,54 +118,3 @@ apache2ctl is a script/program.
 /etc/apache2/{conf,mods,sites}-{available,enabled}
 
 php5-curl (needed by Drupal testing module) requires Apache restart after installation.
-
-
-
-DRUPAL FTP ACCESS
------------------
-
-FROM https://www.drupal.org/node/1608658
-Linux Instructions (UNSECURED):
-
-Step 1: sudo  apt-get  install  vsftpd
-
-Step 2: sudo nano /etc/vsftpd.conf
-Uncomment these settings:
-listen=YES
-local_enable=YES
-write_enable=YES
-local_umask=022
-anon_upload_enable=YES
-anon_mkdir_write_enable=YES
-
-Enter the following:
-local_root=/home
-
-Step 3: sudo service vsftpd restart
-
-Now you should be able to install modules via ftp. For user/pass, anonymous and blank password.
-
-This was written for n00bs who just want to test modules locally. To set this up on a live server, read the documentation thoroughly.
-
-
-
-FROM http://jarodms-drupal.blogspot.com/2011/09/updating-modules-and-themes-requires.html
-Updating modules and themes requires FTP access to your server
-
-http://drupal.org/documentation/install/modules-themes/modules-7#comment-4690140
-
-The short of it, change the owner of the sites/default directory to whoever the Apache default user is (www-data, apache, etc.)
-
-chown www-data sites/default
-
-
-FROM https://www.drupal.org/node/1362318
-Just run this on your terminal (linux/ubuntu)
-sudo chown www-data:www-data -R /var/www/drupal717/
-
-
-
-
-cd /usr/share/drupal7
-sudo chown www-data sites
-sudo chown www-data /etc/drupal/7/sites/default
