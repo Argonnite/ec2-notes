@@ -133,3 +133,10 @@ chown www-data sites/default
 FROM https://www.drupal.org/node/1362318
 Just run this on your terminal (linux/ubuntu)
 sudo chown www-data:www-data -R /var/www/drupal717/
+
+
+
+
+cd /usr/share/drupal7
+sudo chown www-data sites
+sudo chown www-data /etc/drupal/7/sites/default
