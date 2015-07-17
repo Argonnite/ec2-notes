@@ -93,6 +93,9 @@ php5-curl (needed by Drupal testing module) requires Apache restart after instal
 
 
 DRUPAL FTP ACCESS
+-----------------
+
+FROM https://www.drupal.org/node/1608658
 Linux Instructions (UNSECURED):
 
 Step 1: sudo  apt-get  install  vsftpd
@@ -114,3 +117,19 @@ Step 3: sudo service vsftpd restart
 Now you should be able to install modules via ftp. For user/pass, anonymous and blank password.
 
 This was written for n00bs who just want to test modules locally. To set this up on a live server, read the documentation thoroughly.
+
+
+
+FROM http://jarodms-drupal.blogspot.com/2011/09/updating-modules-and-themes-requires.html
+Updating modules and themes requires FTP access to your server
+
+http://drupal.org/documentation/install/modules-themes/modules-7#comment-4690140
+
+The short of it, change the owner of the sites/default directory to whoever the Apache default user is (www-data, apache, etc.)
+
+chown www-data sites/default
+
+
+FROM https://www.drupal.org/node/1362318
+Just run this on your terminal (linux/ubuntu)
+sudo chown www-data:www-data -R /var/www/drupal717/
