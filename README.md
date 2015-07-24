@@ -127,7 +127,7 @@ Prereqs:  Follow setup from https://modulesunraveled.com/organic-groups-7x-2x
 
 Navigate to admin/structure/pages/edit/node_view
 Click on Variants >> Panels >> Content
-Modify Layout as needed.
+Modify Layout as needed. (OG Menu is under Add Content >> Misc)
 
 Suggested:
 "Content create links" from either EntityReference [1] or OG "Content prepopulate links"
