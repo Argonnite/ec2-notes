@@ -123,7 +123,7 @@ php5-curl (needed by Drupal testing module) requires Apache restart after instal
 DRUPAL7 ORGANIC GROUPS CONFIG
 -----------------------------
 
-Entity prepopulate:  Go to “Structure => Content types => Article => Manage fields” (admin/structure/types/manage/article/fields)
+Entity prepopulate:  Go to “Structure => Content types => Article => Manage fields” (to make Article creatable) (admin/structure/types/manage/article/fields)
     Click “edit” next to “Groups audience”
 
 If we scroll down just a bit, we’ll see the “Additional Behaviors” section. In here, we need to enable the “Entity reference prepopulate” option for this content type to show up in our “Content create links” list.
