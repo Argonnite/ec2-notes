@@ -141,3 +141,5 @@ Anything suggested by the above video series.
      Go to “Structure => Content types => Article => Manage fields” (to make Article creatable) (admin/structure/types/manage/article/fields)
      Click “edit” next to “Groups audience”
      If we scroll down just a bit, we’ll see the “Additional Behaviors” section. In here, we need to enable the “Entity reference prepopulate” option for this content type to show up in our “Content create links” list.
+
+When populating group with content, turn on menu links to ensure hierarchy is tracked for Menu Breadcrumb.
