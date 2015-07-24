@@ -127,3 +127,5 @@ Entity prepopulate:  Go to “Structure => Content types => Article => Manage fi
     Click “edit” next to “Groups audience”
 
 If we scroll down just a bit, we’ll see the “Additional Behaviors” section. In here, we need to enable the “Entity reference prepopulate” option for this content type to show up in our “Content create links” list.
+(From https://modulesunraveled.com/organic-groups-7x-2x)
+
