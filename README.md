@@ -142,4 +142,5 @@ Anything suggested by the above video series.
      Click “edit” next to “Groups audience”
      If we scroll down just a bit, we’ll see the “Additional Behaviors” section. In here, we need to enable the “Entity reference prepopulate” option for this content type to show up in our “Content create links” list.
 
-When populating group with content, turn on menu links to ensure hierarchy is tracked for Menu Breadcrumb.
+When populating group with content, turn on menu links to ensure hierarchy is tracked for Menu Breadcrumb
+Also need to "add link" to appropriate menu under admin/structure/og_menu
