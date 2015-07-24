@@ -133,7 +133,7 @@ Suggested:
 "Content create links" from either EntityReference [1] or OG "Content prepopulate links"
      (Note: Latter lists only those attached via "Group Content" Content Types.)
 OG Menu : multiple
-Menu Breadcrumb
+Menu Breadcrumb (also enable it from admin/config/user-interface/menu-breadcrumb)
 Variation of custom "Golden" View
 Anything suggested by the above video series.
 
