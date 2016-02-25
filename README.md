@@ -101,9 +101,9 @@ Drupal7 subtheme import
 References
 ----------
 
-http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
-http://www.comtechies.com/2013/02/how-to-set-up-gui-on-amazon-ec2-ubuntu.html
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html<br />
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html<br />
+http://www.comtechies.com/2013/02/how-to-set-up-gui-on-amazon-ec2-ubuntu.html<br />
 
 
 Notes
