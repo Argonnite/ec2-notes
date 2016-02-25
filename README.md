@@ -51,21 +51,21 @@ Drupal7 (Refer to /usr/share/doc/drupal7/README.Debian.gz)
 DRUPAL FTP ACCESS (For modules installation page)
 -------------------------------------------------
 
-FROM https://www.drupal.org/node/1608658
+FROM https://www.drupal.org/node/1608658<br />
 Linux Instructions (UNSECURED):
 
 Step 1: sudo  apt-get  install  vsftpd
 
-Step 2: sudo nano /etc/vsftpd.conf
-Uncomment these settings:
-listen=YES
-local_enable=YES
-write_enable=YES
-local_umask=022
-anon_upload_enable=YES
+Step 2: sudo nano /etc/vsftpd.conf<br />
+Uncomment these settings:<br />
+listen=YES<br />
+local_enable=YES<br />
+write_enable=YES<br />
+local_umask=022<br />
+anon_upload_enable=YES<br />
 anon_mkdir_write_enable=YES
 
-Enter the following:
+Enter the following:<br />
 local_root=/home
 
 Step 3: sudo service vsftpd restart
@@ -74,7 +74,7 @@ Now you should be able to install modules via ftp. For user/pass, anonymous and 
 
 This was written for n00bs who just want to test modules locally. To set this up on a live server, read the documentation thoroughly.
 
-ADDITIONALLY:
+ADDITIONALLY:<br />
 cd /usr/share/drupal7<br />
 sudo chown www-data sites<br />
 sudo chown www-data /etc<br />
