@@ -75,15 +75,14 @@ Now you should be able to install modules via ftp. For user/pass, anonymous and 
 This was written for n00bs who just want to test modules locally. To set this up on a live server, read the documentation thoroughly.
 
 ADDITIONALLY:
-<ul>
-<li>cd /usr/share/drupal7</li>
-<li>sudo chown www-data sites</li>
-<li>sudo chown www-data /etc</li>
-<li>sudo chown www-data /etc/drupal</li>
-<li>sudo chown www-data /etc/drupal/7</li>
-<li>sudo chown www-data /etc/drupal/7/sites</li>
-<li>sudo chown www-data /etc/drupal/7/sites/default</li>
-</ul>
+cd /usr/share/drupal7<br />
+sudo chown www-data sites<br />
+sudo chown www-data /etc<br />
+sudo chown www-data /etc/drupal<br />
+sudo chown www-data /etc/drupal/7<br />
+sudo chown www-data /etc/drupal/7/sites<br />
+sudo chown www-data /etc/drupal/7/sites/default<br />
+
 
 
 Drupal7 subtheme import
