@@ -97,6 +97,21 @@ Drupal7 subtheme import
 4.  Enable subtheme from admin Appearance menu.
 
 
+DRUSH module updates
+--------------------
+
+1.  drush vset --exact maintenance_mode 1
+
+2.  drush cc all
+
+3.  drush up -n | grep available
+
+4.  drush up <modulename>
+
+5.  drush cc all
+
+6.  drush vset --exact maintenance_mode 0
+
 
 References
 ----------
